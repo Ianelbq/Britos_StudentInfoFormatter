@@ -1,0 +1,19 @@
+first_name = input("Enter First Name: ")
+last_name = input("Enter Last Name: ")
+section = input("What section: ")
+fav_sub = input("Favorite Subject is: ")
+
+clean_first = first_name.strip().title()
+clean_last = last_name.strip().title()
+full_name = f"{clean_first} {clean_last}"
+
+name_code = full_name.upper()
+clean_section = section.strip().upper()
+clean_favourite = fav_sub.strip().title()
+
+print("\n--- Student Information ---")
+print(f"{'Name:':<28} {full_name}")
+print(f"{'Name Code:':<28} {name_code}")
+print(f"{'Section:':<28} {clean_section}")
+print(f"{'Favourite Subject:':<28} {clean_favourite}")
+print(f"{'Character Count (Full Name):':<28} {len(full_name)}")
